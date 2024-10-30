@@ -24,14 +24,18 @@ const brands = [
 <template>
   <div class="brand">
     <div v-for="brand of brands">
-      <img
-        :src="brand.src"
-        :width="brand.width"
-        :height="brand.height"
-        loading="lazy"
-        :alt="brand.name"
-      />
-      <figcaption>{{ brand.name }}</figcaption>
+      <figure>
+        <img
+          :src="brand.src"
+          :width="brand.width"
+          :height="brand.height"
+          loading="lazy"
+          :alt="brand.name"
+        />
+        <figcaption style="text-align: center; padding-top: 1rem">
+          {{ brand.name }}
+        </figcaption>
+      </figure>
     </div>
   </div>
 </template>

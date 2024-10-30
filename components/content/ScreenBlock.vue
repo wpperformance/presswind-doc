@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   screen: string[]
 }>()
 </script>

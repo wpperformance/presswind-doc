@@ -4,6 +4,8 @@ const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
+
+  //   modules: ['@nuxt/image-edge'],
   components: [
     {
       prefix: '',
@@ -11,5 +13,6 @@ export default defineNuxtConfig({
       global: true,
     },
   ],
-  //   modules: ['@nuxt/image-edge'],
+
+  compatibilityDate: '2024-10-30',
 })
