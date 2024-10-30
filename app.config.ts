@@ -6,13 +6,13 @@ export default defineAppConfig({
     url: 'https://presswind-doc.wp-performance.com',
     image: '/screenshot.png',
     socials: {
-      github: 'WP-Performance',
+      github: 'wpperformance',
     },
     github: {
       dir: undefined,
       branch: 'main',
       repo: 'press-wind',
-      owner: 'WP-Performance',
+      owner: 'wpperformance',
       edit: true,
     },
     header: {

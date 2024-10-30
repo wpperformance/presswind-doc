@@ -8,7 +8,7 @@ const { data: repoInfos, pending: repoPending } = useAsyncData(
   'repoInfos',
   async () => {
     const response: { stargazers_count: number } = await $fetch(
-      'https://api.github.com/repos/WP-Performance/press-wind',
+      'https://api.github.com/repos/wpperformance/press-wind',
     )
     return response
   },
@@ -18,7 +18,7 @@ const { data: tagInfos, pending: tagPending } = useAsyncData(
   'tagInfos',
   async () => {
     const response: { name: string; zipball_url: string }[] = await $fetch(
-      'https://api.github.com/repos/WP-Performance/press-wind/tags',
+      'https://api.github.com/repos/wpperformance/press-wind/tags',
     )
     return response
   },

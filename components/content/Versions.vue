@@ -6,7 +6,7 @@ const { data, pending } = useAsyncData('lastReleases', async () => {
     tag_name: string
     published_at: string
   }[] = await $fetch(
-    'https://api.github.com/repos/WP-Performance/press-wind/releases',
+    'https://api.github.com/repos/wpperformance/press-wind/releases',
   )
   return response
 })
